@@ -1,0 +1,37 @@
+table {
+	border: solid 1px #333;
+	margin: 0 auto;
+	padding: 6px;
+	width: 350px;
+	border-collapse: collapse;
+}
+img {
+	width: 10px;
+	height: 15px;
+	display: inline-block;
+}
+
+
+th, td {
+	width: 100%;
+	text-align: center;
+	border: solid 1px #333;
+	border-spacing: 0;
+	padding: 5px;
+	font-family: Arial;
+	font-size: 0.9em;
+
+}
+.normalescolores {
+	background: #FFFFCC;
+}
+
+.titulocolores {
+	background: #E6F3FF;
+}
+th {
+	background: #CFCFCF;
+}
+.yen {
+	width: 15px;
+}
