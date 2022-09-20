@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PRACTICA 4</title>
+<link rel="icon" href="imagenes/icono.ico">
+<link rel="stylesheet" type="text/css" href="css/estilo1.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <nav class="Practicanav">
+      <div class="container">
+          <div class="fila">
+            <div id="logo">
+              <a href="index.html"><img class="fime" src="imagenes/logofime.png" alt="FIME" height="90" align="left"></a>
+            </div>
+            <div>
+              <ul>
+                  <li><a href="Practica1.html">Practica 1</a></li>
+                  <li><a href="Practica2.html">Practica 2</a></li>
+                  <li><a href="Practica3.html">Practica 3</a></li>
+                  <li><a href="Practica4.html">Practica 4</a></li>
+                  <li><a href="index.html">Index</a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+   </nav>
+    
+   <h1 class="eltitulo" align="center">Practica No. 4: Conceptos básicos de HTML, XHTML y CSS </h1>
+   <br>
+   
+ </header>
+ <main class="elcuerpo">
+  <section class="practica">
+<h2>HTML y su estructura</h2>
+    <p>Para que un dispositivo comprenda que un documento va a usar las reglas del HTML, este debe tener la extensión .html o .htm; 
+        en estas reglas del lenguaje, hay etiquetas que le permiten al dispositivo saber variedades de cosas como divisiones, o hacer el texto en negritas,
+        estas etiquetas están adentro de los siguientes símbolos: &lt &gt.<br>
+        Algunas de estas etiquetas como el &ltbr&gt así solas funcionan, pero otras etiquetas necesitan cubrir un campo de texto, entonces tenemos que especificar
+        donde empieza la acción y donde termina, poniendo en donde se termina un /; como por ejemplo &lth1&gt va a especificar que texto será nuestro header 1,
+        entonces tenemos que poner el texto que deseamos adentro de estas dos etiquetas: &lth1&gt Ejemplo &lt/h1&gt
+    </p>
+    <h3>Los elementos de HTML y sus propósitos</h3>
+    <p>Algunas etiquetas muy comunes y útiles para los documentos html son los siguientes:</p>
+    <ul>
+        <li><b>&ltHead&gt</b>: Lo establecido dentro de esta etiqueta no es visible para el usuario, pero está llena de información que le da especificaciones útiles a la página.</li>
+        <li><b>&ltTitle&gt</b>: Esta etiqueta es el título que está en la pestaña del navegador del usuario.</li>
+        <li><b>&ltBody&gt</b>: Aquí se encuentra el contenido visible hacia el usuario.</li>
+        <li><b>&lth#&gt</b>: (El # debe ser reemplazado por un número el 1 al 6) Esta etiqueta se usa para tener un encabezado (header) de mayor a menor importancia, 1 siendo el más importante.</li>
+        <li><b>&ltp&gt</b>: Este simboliza párrafo, y crea un espacio antes y después de este para mejor separación.</li>
+        <li><b>&ltol&gt y &ltul&gt</b>: Estos se usan para tener un espacio especificado para una lista, ol, crea una lista ordenada, las cuales están enumeradas; y ul es una lista desordenada donde estas nada más cuentan con un punto.</li>
+        <li><b>&ltli&gt</b>Esta etiqueta se usa para cada elemento de una lista y decirle a la computadora donde colocar el numero si es un ol, o un punto si es un ul.</li>
+    </ul>
+    <h2>XML</h2>
+    <p>A diferencia de HTML, el cual su proposito es mostrar datos, XML, o eXtensible Markup Language fue diseñado con el proposito de distribuir y guardar datos de una manera fácil de leer para la computadora, así como los humanos.
+        Pero el más grande beneficio que trae, es que este no tiene etiquetas predefinidas, estas las crea el desarollador, como por ejemplo si creo una etiqueta que se llame
+        &ltSalon&gt y dentro de este creo otra etiqueta que se llame &ltalumnos&gt, la computadora acepta estas etiquetas, y en el caso que quite o agregue más este seguira funcionando.
+        Cabe recalcar que este es guardado como texto y no tiene ningun tipo de información de como este será mostrado entonces necesita apoyo de otro lenguaje como javascript para esta función.
+    </p>
+    <h2>XHTML</h2>
+    <p>Este es una versión de html basado en XML, y fue diseñado para ser una versión de HTML que pueda leer más facilmente estos formatos que estan basados en guardar datos, 
+        por concequencia, a diferencia de HTML, su sintaxis es mucho más estricta al momento de su trabajo, como, por ejemplo, sus etiquetas siempre deberán ser escritas en minúsculas,
+        o la etiqueta de cierre también debe estar en todo momento, aunque este no lo use como &ltbr&gt, y ya que este es un caso que no ocupa cierre en HTML, este debe ser escrito en XHTML como &ltbr/&gt ;
+        DOCTYPE también es obligatorio, y finalmente &lthtml&gt, &ltitle&gt, &lthead&gt y &ltbody&gt, también son obligatorios.
+    </p>
+    <h2>Preguntas</h2>
+    <ol>
+    <li><b>¿Qué es un XML y para que sirve?</b><br>
+        Es un tipo de lenguaje cuya función es almanecar y distibuir datos, pero este no es capaz de mostrarlos.</li>
+    <li><b>¿Qué caracteristicas tiene un documento HTML?</b><br>
+    Es un lenguaje diseñado para mostrar información y este se separa en head y body, en donde el head esta lleno de metadata de la página que el usuario no ve,
+    en el body esta todo lo que el usuario va a ver, este esta repleta de elementos que le apoya realizar esta función, hay diversos elementos que cambian como luce el texto,
+hay otros que muestran imagenes, videos, audios, listas, tablas, etc.</li>
+    <li><b>¿Qué es y para que sirve un archivo XHTML?</b><br>
+    Es un HTML pero basado en XML con el próposito de poder leer formatos como XML que guardan datos y no son aptos de mostrarlos, pero porque estos no son tan estrictos
+    XHTML requiere ser altamente estricto hacia el desarrollador para poder ser flexible al leer estos lenguajes.</li>
+    </ol>
+    </section>   
+
+    <br>
+        
+    <section class="conclusiones">
+        <br><br>
+    <h3 align="center">Conclusiones</h3>
+    <p>
+        <ul>
+        <li><b>Samuel Gerardo Amaya García 2109423</b><br>
+        Anteriormente yo había escuchado sobre la existencia de XML, pero nunca vi su función, y ahora viendo como este tiene un propósito de guardar datos como un JSON,
+        y que su sintaxis la podemos tener muy similar como un html, me trae a pensar usar este lenguaje para poder practicarlo y mejorar en el proceso; así también el XHTML,
+        me trae curiosidad ver cómo usarlo y trabajar con este para el mismo propósito para ver si puedo crear como una pequeña base de datos con estos dos lenguajes y preparaeme
+        de una mejor manera.
+        </li>
+        <li><b>Brandon Daniel Alvarez Hernandez 1953963</b><br>
+         En esta practica se conoce mas acerca del lenguaje HTML y su estructura asi como otros lenguajes como lo puede ser xml que es un tipo de lenguaje cuya función es almanecar y distibuir datos, pero este no es capaz de mostrarlos. Y XHTML que fue diseñado para ser una versión de HTML que pueda leer más facilmente estos formatos que estan basados en guardar datos, por concequencia, a diferencia de HTML, su sintaxis es mucho más estricta al momento de su trabajo.
+        </li>
+        <li><b>Osmar Enrique Garduño Palafox 1969906</b><br>
+        Los dos tienen un proposito es guardar o almacenar los datos, me siento muy curiso por trabajar con estos tipos de lenguajes, el proceso de mejorar cadia en html me gusta, conocer este tipos de lenguajes me llama mucho la atencion lo que viene adelantes</li>
+        <li><b>Luis Manuel Rosales Herrera</b><br>
+        Tanto HTML como XML al ser lenguajes de marcado tienen una funcionalidad similar pero cada uno tiene sus ventajas, 
+        es interesante como al adaptar HTML al 
+        lenguaje XML como resultado surgio XHTML el cual es más estricto a nivel técnico pero mejor a la hora de relizar cambios o 
+        correcciones y se solucionaron problemas de compatibilidad, logrando asi, concebir un mejor lenguaje para el desarrollo web. 
+        </li>
+        <li><b>Brandon Antonio Mencias Baltierra 2078029</b><br>
+        En esta practica aprendí acerca de de lo que es el HTML y su estructura como lo es su etiquetado, para que funcionan muchas de ellas y como se utilizan. Ademas de la importancia y uso del HTML también se indago acerca del XML y la version de HTML basado en este (XHTML). Ambas sirven para manejar datos de una forma mas sencilla en su lectura tanto para el programador como para la computadora. Me parece de suma importancia conocer estos lenguajes debido a que son ampliamente utilizados para todo tipo de paginas web, y son necesarios para seguir mejorando como programador.</li>
+
+    </ul>
+    <br>
+</p></section>
+  </main>
+<br>
+<pre class="eltitulo">  
+   
+</pre>
+     <footer>
+     <nav class="Practicanav">
+      <div class="container">
+          <div class="fila">
+            <div id="logo">
+              <a href="index.html"><img class="uanl" src="imagenes/logouanl.png" alt="UANL" height="90" align="left"></a>
+            </div>
+            <div>
+              <ul>
+                  <li><a href="Practica1.html">Practica 1</a></li>
+                  <li><a href="Practica2.html">Practica 2</a></li>
+                  <li><a href="Practica3.html">Practica 3</a></li>
+                  <li><a href="Practica4.html">Practica 4</a></li>
+                  <li><a href="index.html">Index</a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+   </nav>   
+  </footer>
+</body>
+</html>
