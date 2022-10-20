@@ -37,12 +37,12 @@ ul li a:hover {
 	background: #3F0D12;
 }
 
-ul li:nth-child(7) a{
+ul li:nth-child(6) a{
 	color: #fff;
 	background: #A71D31 ;
 	padding: 15px 50px;
 }
-ul li:nth-child(7) a:hover{
+ul li:nth-child(6) a:hover{
 	background: #3F0D12;
 
 }
