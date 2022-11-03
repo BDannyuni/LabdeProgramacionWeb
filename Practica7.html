@@ -1,18 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="imagenes/icono.ico">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="imagenes/icono.ico">
     <link rel="stylesheet" type="text/css" href="css/estilo1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-
-    <title>Practica 5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica 7</title>
+  <style>
+    .imganes{
+      width: 70px;
+      height: 70px;
+    }
+  #div1 {
+  align-content: center;
+  padding-top: 0;
+  padding-right: 0;
+  margin-top: 0;
+  margin-right: 0;
+  width: 90px;
+  height: 90px;
+  padding: 5px;
+  border: 5px solid #ff0000;
+  }
+  #div2 {
+  width: 1050px;
+  height: 90px;
+  padding: 10px;
+  border: 10px solid #000000;
+  }
+  </style>
 </head>
-<body> 
-    <header>
+<body>
+  <header>
       <nav class="Practicanav">
       <div class="container">
           <div class="fila">
@@ -34,24 +57,64 @@
           </div>
       </div>
    </nav>
-    
    <h1 class="eltitulo" align="center">Practica No. 6 : CANVAS </h1>
    <br>
  </header>
- <main class="elcuerpo">
-  <section class="practica">
-<div class="encabezado">
-    <div class="tituloPractica5">
-    <br><br></div>
-    <canvas width="300" height="300" id="dibujito"></canvas>
-        <p>
-        <input type= "text" id="usuario"/> 
-        <input type= "button" id="dibujalo" value="Traza las rayas"/>
-        </p>
-      </section>  
-    <br>
-        
-    <section class="conclusiones">
+  <br><br><br>
+<h1 style="text-align: center;">Signograma</h1>
+<h2 style="text-align: center;">Coloca los numeros del 1-9 de modo que las operaciones aritmeticas sean correctas</h2><br><br>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin:auto;">
+  <img class="imganes" id="drag1" src="imagenes/uno.jpg" draggable="true" ondragstart="drag(event)" >
+  <img class="imganes" id="drag2" src="imagenes/dos.jpg" draggable="true" ondragstart="drag(event)" >
+  <img class="imganes" id="drag3" src="imagenes/tres.jpg" draggable="true" ondragstart="drag(event)" >
+  <img class="imganes" id="drag4" src="imagenes/cuatro.jpg" draggable="true" ondragstart="drag(event)">
+  <img class="imganes" id="drag5" src="imagenes/cinco.jpg" draggable="true" ondragstart="drag(event)" >
+  <img class="imganes" id="drag6" src="imagenes/seis.png" draggable="true" ondragstart="drag(event)" >
+  <img class="imganes" id="drag7" src="imagenes/siete.jpg" draggable="true" ondragstart="drag(event)" >
+  <img class="imganes" id="drag7" src="imagenes/ocho.jpg" draggable="true" ondragstart="drag(event)" >
+  <img class="imganes" id="drag9" src="imagenes/nueve.png" draggable="true" ondragstart="drag(event)" ></div>
+</div> <br><br><br><br>
+<table style="margin:auto;">
+  <tr>
+    <th><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></th>
+    <th><img src="imagenes/menos.jpg"><br></th>
+    <th><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></th>
+    <th><img src="imagenes/igual.jpg"><br></th>
+    <th><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></th>
+  </tr>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th><img src="imagenes/por.png"><br></th>
+  </tr>
+  <tr>
+    <th><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></th>
+    <th><img src="imagenes/entre.png"><br></th>
+    <th><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></th>
+    <th><img src="imagenes/igual.jpg"><br></th>
+    <th><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></th>
+  </tr>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th><img src="imagenes/igual2.jpg"><br></th>
+  </tr>
+  <tr>
+    <th><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></th>
+    <th><img src="imagenes/mas.jpg"><br></th>
+    <th><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></th>
+    <th><img src="imagenes/igual.jpg"><br></th>
+    <th><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></th>
+  </tr>
+</table>
+<br><br><br><br><br><br><br>
+<main><br>
+<br><br><br><br>
+<section class="conclusiones">
         <br><br>
     <h3 align="center">Conclusiones</h3>
     <p>
@@ -73,9 +136,9 @@
         <p>Está práctica fue muy interesante debido a que el uso del elemento Canvas es muy versátil. Permite crear imágenes dinámicas que hacen que las páginas web sean agradables a la vista y permiten mostrar la información de una manera más sencilla de comprender. Es muy importante aprender este tipo de elementos para poder crear páginas web más profesionales.</p><br>
 
     </p>
-  </main>
-<br>
-<pre class="eltitulo">  
+  </section>
+    </main><br><br><br><br><br><br>
+    <pre class="eltitulo">  
    
 </pre>
      <footer>
@@ -102,93 +165,20 @@
    </nav>   
   </footer>
 
-
-
-  <script type="text/javascript">
-    inicio();
-    var dibujo, lienzo, t, b;
-function inicio()
-{
-    t = document.getElementById("usuario");
-    b = document.getElementById("dibujalo");
-    dibujo = document.getElementById("dibujito");
-    lienzo = dibujo.getContext("2d");
-    
-    b.addEventListener("click", dibujarGrilla);
-    
-//  lienzo.strokeStyle = "#A71D90";
-//  lienzo.moveTo(0,0);
-//  lienzo.lineTo(300,0);
-//  lienzo.lineTo(300,300);
-//  lienzo.lineTo(0,300);
-//  lienzo.lineTo(0,0);
-//  lienzo.stroke();
-
-    //cara
-    lienzo.beginPath();
-    lienzo.arc(150, 150, 100, Math.PI*2, false);
-    lienzo.closePath();
-    lienzo.stroke();
-    lienzo.fillStyle = "#F0C11A";
-    lienzo.fill ();
-
-    //boca
-    lienzo.beginPath();
-    lienzo.strokeStyle = "#110E02";
-    lienzo.arc(150, 150, 50,0, Math.PI, false);
-    lienzo.moveTo (100,100);
-    lienzo.closePath();
-    lienzo.stroke();
-
-    //ojo izquierdo
-    lienzo.beginPath();
-    lienzo.arc(125, 125, 10,0, Math.PI*2, false);
-    lienzo.closePath();
-    lienzo.fillStyle = "#110E02";
-    lienzo.fill ();
-    
-    //ojo derecho
-    lienzo.beginPath();
-    lienzo.arc(175, 125, 10,0, Math.PI*2, false);
-    lienzo.closePath();
-    lienzo.fillStyle = "#110E02";
-    lienzo.fill ();
-}
-
-function dibujarGrilla(pony)
-{
-    var pony = lienzo;
-    var rayas = Number(t.value);
-    var ancho = 300, alto = 300;
-    var linea, punto;
-    var anchoLinea = ancho / rayas;
-    var limiteX = ancho / anchoLinea;
-    var limiteY = alto / anchoLinea;
-
-    pony.strokeStyle = "#AAA";
-    
-    
-    for(linea = 0; linea <= limiteX; linea++)
-    {
-        punto = linea * anchoLinea;
-        pony.beginPath();
-        pony.moveTo(punto, 0);
-        pony.lineTo(punto + (anchoLinea * 2), alto);
-        pony.stroke();
-        pony.closePath();
+    <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
     }
     
-    for(linea = 0; linea <= limiteY; linea++)
-    {
-        punto = linea * anchoLinea;
-        pony.beginPath();
-        pony.moveTo(0, punto);
-        pony.lineTo(ancho, punto + (anchoLinea * 2));
-        pony.stroke();
-        pony.closePath();
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
     }
-}
+    
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
     </script>
-
 </body>
 </html>
